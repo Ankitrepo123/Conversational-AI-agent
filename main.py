@@ -4,7 +4,7 @@ from calendar_service import create_event
 from datetime import datetime
 import dateutil.parser
 
-st.title("CALENDAR - Smart Appointment Booking Bot")
+st.title("💻CALENDAR - Smart Appointment Booking Bot")
 
 user_input = st.text_input("💬 Enter your request (e.g., 'Book an appointment for Neha on Friday at 5pm'):")
 
