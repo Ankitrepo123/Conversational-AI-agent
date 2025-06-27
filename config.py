@@ -6,3 +6,4 @@ class Settings(BaseSettings):
     credentials_file: str = "credentials.json"       # service account file
 
 settings = Settings()
+#jhhdhjndhfvn
