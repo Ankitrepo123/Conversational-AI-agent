@@ -13,8 +13,7 @@ def create_event(summary, start_time, end_time):
     service = build('calendar', 'v3', credentials=creds)
     event = {
         'summary': summary,
-        'start': {'dateTime':dateutil.parser.isoparse(start_time).isoformat(), 'timeZone': 'Asia/Kolkata'},
-        'end': {'dateTime':dateutil.parser.isoparse(start_time).isoformat(), 'timeZone': 'Asia/Kolkata'},
+        'start': {'dateTime': start_time, 'timeZone': 'Asia/Kolkata'},
+        'end': {'dateTime': end_time, 'timeZone': 'Asia/Kolkata'},
     }
     return service.events().insert(calendarId=settings.calendar_id, body=event).execute()
-#datetime.fromisoformat(end_time)
